@@ -1,0 +1,32 @@
+def order(sentence):
+  texto = sentence.split()
+  
+  novotexto = [""] *len(texto)
+  
+  for i in range(len(texto)):
+    
+    if ("1" in texto[i]):
+      novotexto[0] = texto[i]  
+    elif ("2" in texto[i]):    
+      novotexto[1] = texto[i]
+    elif ("3" in texto[i]):
+      novotexto[2] = texto[i]
+    elif ("4" in texto[i]):
+      novotexto[3] = texto[i]
+    elif ("5" in texto[i]):
+      novotexto[4] = texto[i]
+    elif ("6" in texto[i]):
+      novotexto[5] = texto[i]
+    elif ("7" in texto[i]):
+      novotexto[6] = texto[i]
+    elif ("8" in texto[i]):
+      novotexto[7] = texto[i]
+    elif ("9" in texto[i]):
+      novotexto[8] = texto[i]
+    
+  
+  
+  return " ".join(novotexto)
+
+
+print(order("4of Fo1r pe6ople g3ood th5e the2"))
